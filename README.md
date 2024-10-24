@@ -7,7 +7,7 @@
 
 <h2>Components</h2>
 
-<h3>1. SDRAM Controller (<code>sdram_controller.v</code>)</h3>
+<h3>1. SDRAM Controller (<code>sdram.v</code>)</h3>
 <p>
   This module handles read/write operations to the Micron MT48LC4M16A2 SDRAM chip. It ensures that the SDRAM is refreshed periodically and manages the interface between the FPGA and the SDRAM. The controller supports both burst and single access modes.
 </p>
@@ -26,7 +26,7 @@
   </ul>
 </ul>
 
-<h3>2. VGA Display Controller (<code>vga_controller.v</code>)</h3>
+<h3>2. VGA Display Controller (<code>vga.v</code>)</h3>
 <p>
   The VGA controller manages the display of data stored in the SDRAM on a VGA display. It reads pixel data from SDRAM and drives the RGB signals to generate a display with a resolution of 800x600 pixels.
 </p>
@@ -110,7 +110,7 @@
   </ul>
 </ul>
 
-<h3>7. Binary-to-Gray Code and Gray-to-Binary Converter (<code>pcg.v</code>, <code>grc.v</code>)</h3>
+<h3>7. Binary-to-Gray Code and Gray-to-Binary Converter <code>gray.v</code></h3>
 <p>
   These utility modules convert binary data to Gray code and vice versa. This is useful for error reduction in asynchronous communication.
 </p>
